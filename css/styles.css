@@ -201,7 +201,7 @@ ul {
 }
 
 .advantages-item {
-    width: calc((100% - 72px) / 4);
+    max-width: calc((100% - 72px) / 4);
 }
 
 .advantages-title {
