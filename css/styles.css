@@ -140,26 +140,39 @@ ul {
 
 /* Main section */
 .main-section {
-    background: var(--navyblue, #2E2F42);
+    background-color: var(--navyblue);
+    text-align: center;
+    padding: 188px 0;
 }
 
 .main-title {
-    color: var(--white);
-    text-align: center;
-    font-size: 56px;
     font-weight: 700;
+    font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .main-button {
-    color: var(--white);
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
     background-color: var(--iris);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    color: #fff;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    font-weight: 500;
+    padding: 16px 32px;
     cursor: pointer;
+    border-radius: 4px;
+    margin: 0 auto;
+    border: none;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.225);
 }
 
 .main-button:hover, .main-button:focus {
