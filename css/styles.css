@@ -13,19 +13,33 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--slate);
     background-color: var(--white);
-    font-size: 16px;
 }
 
-a {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+
+a,
+a:hover,
+a:active {
     text-decoration: none;
+}
+
+img{
+    display: block;
 }
 
 ul {
     list-style-type: none;
-}
-
-button {
-    font-family: inherit;
+    margin:0;
+    padding-left: 0;
 }
 /* END base */
 
@@ -35,41 +49,88 @@ button {
     overflow: hidden;
 }
 
+.section{
+    padding: 120px 0;
+}
+
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
+
 /* Header */
+.header {
+    border-bottom: 1px solid var(--cornflower);
+}
+
+.header .container{
+    display:flex;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.header .container .nav{
+    display: flex;
+    align-items: center;
+    margin-right: 332px;
+}
+
 .logo {
-    color: var(--IRIS, #4D5AE5);
     font-family: 'Raleway', sans-serif;
+    font-weight: 800;
     font-size: 18px;
-    font-weight: 700;
+    color: var(--iris);
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.nav .logo{
+    margin-right: 76px;
 }
 
 .logo-accent {
     color: var(--navyblue);
 }
 
-.nav-link {
-    color: var(--navyblue, #2E2F42);
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+.menu{
+    display: flex;
+    gap: 40px;
 }
 
-.nav-link:hover, .nav-link:focus {
-    color: var(--ocean);
+.nav-link {
+    display: inline-block;
+    color: var(--navyblue);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--color-ocean);
 }
 
 .adress {
     font-style: normal;
 }
 
+.adress-list {
+    display: flex;
+    gap: 40px;
+}
+
 .adress-link {
-    color: var(--SLATE, #434455);
-    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--slate);
 }
 
 .adress-link:hover, .adress-link:focus {
@@ -83,7 +144,7 @@ button {
 }
 
 .main-title {
-    color: var(--white, #FFF);
+    color: var(--white);
     text-align: center;
     font-size: 56px;
     font-weight: 700;
