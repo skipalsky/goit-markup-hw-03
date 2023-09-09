@@ -56,11 +56,11 @@ ul {
     overflow: hidden;
   }
 
-.section{
+.section {
     padding: 120px 0;
 }
 
-.container{
+.container {
     width: 1158px;
     margin: 0 auto;
     padding-left: 15px;
@@ -201,7 +201,7 @@ ul {
 }
 
 .advantages-item {
-    max-width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 
 .advantages-title {
@@ -286,27 +286,26 @@ ul {
 /* END portfolio section */
 
 /* Footer */
-.bg-footer {
-    background: var(--navyblue, #2E2F42);
+.footer {
+    background-color: var(--navyblue);
+    padding: 100px 0;
 }
 
-.logo-footer {
-    color: var(--iris);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
-.logo-footer-accent {
+.footer .logo-web {
     color: var(--cloud);
 }
 
 .footer-text {
     color: var(--cloud);
+    font-weight: 400;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 /* END footer */
